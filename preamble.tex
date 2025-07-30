@@ -1,0 +1,51 @@
+\usepackage[utf8]{inputenc} % For encoding
+\usepackage[spanish]{babel}
+\usepackage{
+	% General & page Layout
+	geometry,       % For page margins
+	graphicx,       % For images
+	float,          % For float placement [H]
+	caption,        % For personalizing captions
+	xcolor,         % For colors
+	% Math and algorithms
+	amsmath,        % For math
+	amsfonts,
+	algorithm,
+	algpseudocode,
+	% Tables and bibliography
+	tabularx,       % For advanced tables
+	booktabs,       % For professional tables
+	% Other
+	hyperref        % For links (load this last)
+}
+
+\graphicspath{{assets/}}
+\geometry{
+	left=1.5cm,
+	right=1.5cm,
+	top=1.5cm,
+	bottom=1.5cm
+}
+\pagestyle{plain} % Chapter/section in header
+
+% ------------------------------ CUSTOM COMMANDS ----------------------------- %
+
+\newcommand{\norm}[1]{\left \lVert #1 \right \rVert}
+\newcommand{\card}[1]{\left \lvert #1 \right \rvert}
+\newcommand{\abs}[1]{\left \lvert #1 \right \rvert}
+
+\newcommand{\ceil}[1]{\left \lceil #1 \right \rceil}
+\newcommand{\floor}[1]{\left \lfloor #1 \right \rfloor}
+
+\newcommand{\psin}[1]{\sin\left (#1 \right )}
+\newcommand{\pcos}[1]{\cos\left (#1 \right )}
+\newcommand{\ptan}[1]{\tan\left (#1 \right )}
+\newcommand{\pcsc}[1]{\csc\left (#1 \right )}
+\newcommand{\psec}[1]{\sec\left (#1 \right )}
+\newcommand{\pcot}[1]{\cot\left (#1 \right )}
+
+\newcommand{\parcsin}[1]{\arcsin \left (#1 \right )}
+\newcommand{\parccos}[1]{\arccos \left (#1 \right )}
+\newcommand{\parctan}[1]{\arctan \left (#1 \right )}
+\DeclareMathOperator{\arcsec}{arcsec}
+\newcommand{\parcsec}[1]{\arcsec \left (#1 \right )}
